@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayoutWrap="wrap">
+    <div fxFlex.gt-sm="100%" fxFlex="100">
+            <mat-card>
+                <mat-card-content>
+                    <h3>Router Outlet</h3>
+                    <p-tabMenu [model]="items3">
+                    </p-tabMenu>
+                    <div style="padding: 0.5em;">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-card-content>    
+        </mat-card>

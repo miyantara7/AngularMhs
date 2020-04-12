@@ -1,0 +1,77 @@
+<app-user></app-user>
+ 
+<p style="text-align: center;font-size: 30px; color: rgb(11, 10, 102);font-family: 'Courier New', Courier, monospace; "><b>FORM PENDAFTARAN</b></p>
+
+  <br>
+  <div fxLayout="row" fxLayoutWrap="wrap">
+    <div fxFlex.gt-lg="66" fxFlex.gt-md="66" fxFlex.gt-sm="100" fxFlex="100">
+    <mat-card>
+    <mat-card-content>
+    <span class="ui-float-label" id="back"> 
+        <input [(ngModel)]="Mahasis.noKtpMhs" id="float-input" type="text" size="30" pInputText > 
+        <label for="float-input">No Ktp Anda </label> 
+    </span>
+    <br>
+    <span class="ui-float-label">
+        <input [(ngModel)]="Mahasis.emailMhs" id="float-input" type="text" size="30" pInputText > 
+        <label for="float-input">Email Anda </label>
+    </span>
+    <br>
+    <span class="ui-float-label">
+        <input [(ngModel)]="Mahasis.namaMhs"id="float-input" type="text" size="30" pInputText > 
+        <label for="float-input">Nama Anda </label>
+    </span>
+    <br>
+    <span class="ui-float-label">
+        <input [(ngModel)]="Mahasis.alamatMhs"id="float-input" type="text" size="30" pInputText > 
+        <label for="float-input">Alamat Anda </label>
+    </span>
+    <br>
+  <span class="ui-float-label">
+    <input [(ngModel)]="Mahasis.noKtpOrtu"id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">No Ktp Orang Tua Anda </label>&nbsp;
+  </span>
+  <br>
+  <span class="ui-float-label">
+    <input [(ngModel)]="Mahasis.namaOrtu"id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">Nama Orang Tua Anda </label>&nbsp;
+  </span>
+  <br>
+        <span class="ui-float-label" id="back"> 
+            <input [(ngModel)]="Mahasis.namaAsalSekolah"id="float-input" type="text" size="30" pInputText > 
+            <label for="float-input">Asal Sekolah Anda </label> 
+        </span>
+        <br>
+        <span class="ui-float-label">
+            <input [(ngModel)]="Mahasis.alamatAsalSekolah"id="float-input" type="text" size="30" pInputText > 
+            <label for="float-input">Alamat Sekolah Anda </label>
+        </span>
+        <br>
+        <span class="ui-float-label">
+            <input [(ngModel)]="Mahasis.nilaiBindo"id="float-input" type="text" size="30" pInputText > 
+            <label for="float-input">Nilai B.Indonesia </label>
+        </span>
+        <br>
+        <span class="ui-float-label">
+            <input [(ngModel)]="Mahasis.nilaiMatematika"id="float-input" type="text" size="30" pInputText > 
+            <label for="float-input">Nilai Matematika </label>
+        </span>
+        <br>
+      <span class="ui-float-label">
+        <input [(ngModel)]="Mahasis.nilaiFisika"id="float-input" type="text" size="30" pInputText > 
+        <label for="float-input">Nilai Fisika </label>&nbsp;
+      </span>
+      <br>
+        </mat-card-content>    
+        </mat-card>
+        </div> 
+        </div>
+        <ul>
+    <button _ngcontent-vks-c3="" (click)="setMhs()" class="ui-button-rounded ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" label="Primary" pbutton="" type="reset" >
+        <span class="ui-button-text ui-clickable">Enter</span></button>
+    </ul> 
+    <br>
+    <hr>
+    <div class="footer">
+    <p style="text-align: center;">@Copyright 2020 - I KADEK ARYA YOGIMIYAANTARA & IHSAN FADIL</p>
+    </div>

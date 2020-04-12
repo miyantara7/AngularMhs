@@ -1,0 +1,37 @@
+<div fxLayout="row" fxLayoutWrap="wrap">
+    <div fxFlex.gt-sm="100%" fxFlex="100">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  <div class="container">
+    <br>
+    <h2>DAFTAR ORANG ORANG</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Asal Sekolah</th> 
+                <th>Option</th> 
+            </tr>         
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of dataNotMhs">
+                <td>{{data.namaMhs}}</td>
+                <td>{{data.emailMhs}}</td>
+                <td>{{data.namaAsalSekolah}}</td>
+                <button pButton type="button" label="Accept" class="ui-button-raised ui-button-danger" (click)="acceptMhs(data)"></button> 
+                <button pButton type="button" label="Reject" class="ui-button-raised ui-button-danger" (click)="rejectMhs(data)"></button>                                                          
+            </tr>        
+        </tbody>
+    </table>
+  </div> 
+  </body>
+</div>
