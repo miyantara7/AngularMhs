@@ -19,7 +19,7 @@ export class UserserviceService implements OnInit{
   public getUsers(userrequest) : Observable<User>{
     return this.http.post<User>(this.uri+"login",userrequest)
   }
-  public setMhss(mhsreq) : Observable<Mahasiswa>{
-    return this.http.post<Mahasiswa>(this.uri+"insert",mhsreq)
+  public setMhss(mhsreq){
+    return this.http.post(this.uri+"insert",mhsreq)
   }
 }

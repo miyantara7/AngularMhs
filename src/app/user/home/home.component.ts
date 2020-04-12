@@ -9,10 +9,10 @@ import { UserserviceService } from '../../service/userservice.service';
 })
 export class HomeComponent implements OnInit {
   a : number
-  datas: any;
+  message: any;
   Mahasis = new Mahasiswa()
   constructor(private service:UserserviceService) {  
-    this.setMhs()
+    
   }
   
   ngOnInit(): void {
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   public setMhs(){
     let resp=this.service.setMhss(this.Mahasis)
     resp.subscribe((data)=>{
-      this.Mahasis=data
+      this.message=data
     });
     
   }
